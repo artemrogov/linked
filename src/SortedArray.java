@@ -10,7 +10,6 @@ public class SortedArray {
 
         Node[] linkArray = new Node[size];
 
-
        for (int i = 0;i<size; i++ ){
 
             int n = (int)(java.lang.Math.random()*99);
@@ -33,7 +32,9 @@ public class SortedArray {
 
         SortedList sortedList = new SortedList(linkArray);
 
-        for (int k = 0; k<size; k++){
+
+
+       for (int k = 0; k<size; k++){
             linkArray[k] = sortedList.remove();
         }
 
