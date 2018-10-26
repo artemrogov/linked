@@ -12,7 +12,7 @@ public class AppMain2 {
         list.insertFirst(4,"Футболка");
         list.insertFirst(5,"Кросовки");
 
-        list.printList();
+        list.printList(); // вывод элементов списка
 
         ///Поиск э-та с заданным ключом:
         Node findElement = list.find(2);
@@ -24,7 +24,7 @@ public class AppMain2 {
             System.out.println("Элемент не найден с ключом!");
         }
 
-        Node deleteItem4 = list.delete(4);
+        Node deleteItem4 = list.delete(4); // удаление элемента списка по его ключу
 
         if (deleteItem4!=null){
 
@@ -34,14 +34,11 @@ public class AppMain2 {
             System.out.println("Нет такого элемента");
         }
 
-        list.printList();
+        list.printList(); // вывод элементов списка
 
         //вставка в связной список
 
         System.out.println();
-
-        //Создание и вставка нового элемента в СС
-        list.insert(8,"New Element");
 
         //вывод результатов на экран:
         list.printList();
